@@ -12,6 +12,11 @@ const options: swaggerJsdoc.Options = {
     servers: [
       {
         url: process.env.SERVER_URL || "http://localhost:" + (process.env.PORT || 5000),
+        description: "dev server"
+      },
+      {
+        url: 'https://backend-rnul.onrender.com',
+        description: "production server"
       },
     ],
     components: {
